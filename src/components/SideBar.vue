@@ -1,0 +1,41 @@
+<template>
+  <div class="sidebar">
+    <router-link to="/dashboard">Dashboard</router-link><br />
+    <router-link to="/AddUser">Add Members</router-link><br />
+    <router-link to="/MemberDetails">Members Details</router-link><br />
+    <router-link to="/RoomS"> Rooms</router-link><br />
+    <router-link to="/CreateRoom"> Create Room</router-link><br />
+    <router-link to="/">Log Out</router-link>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "SideBar",
+};
+</script>
+
+<style scoped>
+.sidebar {
+  height: 100vh;
+  width: 200px;
+  background-color: #2c3e50;
+  padding: 20px;
+  color: #ecf0f1;
+  border-right: 1px solid #34495e;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar a {
+  display: block;
+  margin-bottom: 10px;
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+  color: #3498db;
+}
+</style>
